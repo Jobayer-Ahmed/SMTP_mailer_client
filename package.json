@@ -1,0 +1,25 @@
+{
+  "name": "mailer_for_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "nodemon index.js",
+    "main": "npm run start --prefix main",
+    "dev": "concurrently \"npm run server\" \"npm run main\""
+  },
+  "author": "Jobayer Ahmed Mickey",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.6",
+    "nodemon": "^1.17.5",
+    "xoauth2": "^1.2.0"
+  }
+}
